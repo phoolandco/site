@@ -197,99 +197,31 @@
     <!-- Floating Petals Background -->
     <div id="petals-container"></div>
     
-    <!-- Brand Header -->
-    <div class="bg-white bg-opacity-90 backdrop-blur-md py-4 shadow-sm bg-[url('https://images.unsplash.com/photo-1459156212016-c812468e2115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1305&q=80')] bg-cover bg-center relative">
-        <div class="absolute inset-0 bg-white bg-opacity-70"></div>
-        <div class="container mx-auto px-4 text-center relative z-10">
-            <a href="#" class="inline-block">
-                <h1 class="font-greatvibes text-5xl md:text-6xl text-dustyrose">PhoolandCo</h1>
-                <p class="font-playfair italic text-gray-600 mt-1">Handmade, Everlasting, Timeless</p>
-            </a>
-        </div>
-    </div>
-
-    <!-- Enhanced Sticky Navigation Bar -->
-    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-dustyrose/10">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <!-- Logo with floral accent -->
+    <!-- Sticky Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white bg-opacity-90 backdrop-blur-md shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center">
-                <a href="#" class="flex items-center group">
-                    <div class="w-10 h-10 bg-gradient-to-br from-dustyrose to-blush-pink rounded-full flex items-center justify-center mr-3 transform group-hover:rotate-12 transition-transform duration-300">
-                        <i class="fas fa-spa text-white text-xl"></i>
-                    </div>
-                    <span class="font-greatvibes text-2xl text-dustyrose hidden sm:block relative">
-                        PhoolandCo
-                        <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-dustyrose to-peach opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                    </span>
+                <a href="#" class="flex items-center">
+                    <span class="font-greatvibes text-3xl text-dustyrose">PhoolandCo</span>
                 </a>
             </div>
             
-            <!-- Main Navigation Links -->
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#" class="nav-link relative px-3 py-2 group">
-                    <span class="font-quicksand font-medium text-gray-700 group-hover:text-dustyrose transition-colors duration-300 flex items-center">
-                        <i class="fas fa-home mr-2 text-lg"></i>
-                        Home
-                    </span>
-                    <div class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-dustyrose transform -translate-x-1/2 group-hover:w-full transition-all duration-300"></div>
-                </a>
-                <a href="#categories" class="nav-link relative px-3 py-2 group">
-                    <span class="font-quicksand font-medium text-gray-700 group-hover:text-dustyrose transition-colors duration-300 flex items-center">
-                        <i class="fas fa-store mr-2 text-lg"></i>
-                        Shop
-                    </span>
-                    <div class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-dustyrose transform -translate-x-1/2 group-hover:w-full transition-all duration-300"></div>
-                </a>
-                <a href="#about" class="nav-link relative px-3 py-2 group">
-                    <span class="font-quicksand font-medium text-gray-700 group-hover:text-dustyrose transition-colors duration-300 flex items-center">
-                        <i class="fas fa-leaf mr-2 text-lg"></i>
-                        About
-                    </span>
-                    <div class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-dustyrose transform -translate-x-1/2 group-hover:w-full transition-all duration-300"></div>
-                </a>
-                <a href="#contact" class="nav-link relative px-3 py-2 group">
-                    <span class="font-quicksand font-medium text-gray-700 group-hover:text-dustyrose transition-colors duration-300 flex items-center">
-                        <i class="fas fa-envelope mr-2 text-lg"></i>
-                        Contact
-                    </span>
-                    <div class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-dustyrose transform -translate-x-1/2 group-hover:w-full transition-all duration-300"></div>
-                </a>
+                <a href="#" class="nav-link font-quicksand text-lg text-gray-700 hover:text-dustyrose">Home</a>
+                <a href="#categories" class="nav-link font-quicksand text-lg text-gray-700 hover:text-dustyrose">Category</a>
+                <a href="#contact" class="nav-link font-quicksand text-lg text-gray-700 hover:text-dustyrose">Contact</a>
+                <a href="#about" class="nav-link font-quicksand text-lg text-gray-700 hover:text-dustyrose">About Us</a>
             </div>
             
-            <!-- Right Side Icons -->
-            <div class="flex items-center space-x-5">
-                <!-- Search Button (Icon only, expands on hover) -->
-                <div class="relative group">
-                    <button class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-dustyrose transition-colors duration-300">
-                        <i class="fas fa-search text-xl"></i>
+            <div class="flex items-center space-x-4">
+                <div class="relative">
+                    <input type="text" placeholder="Search by name or ID..." class="font-quicksand pl-4 pr-10 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-dustyrose focus:border-transparent w-40 md:w-64 transition-all duration-300">
+                    <button class="absolute right-3 top-2 text-gray-500 hover:text-dustyrose">
+                        <i class="fas fa-search"></i>
                     </button>
-                    <div class="absolute right-0 top-full mt-2 w-64 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-1 group-hover:translate-y-0 z-10 p-2">
-                        <input type="text" placeholder="Search products..." class="w-full px-4 py-2 border border-gray-200 rounded-md focus:ring-2 focus:ring-dustyrose focus:border-transparent">
-                    </div>
                 </div>
-                
-                <!-- User Account -->
-                <a href="#" class="hidden md:flex items-center justify-center w-10 h-10 text-gray-600 hover:text-dustyrose transition-colors duration-300">
-                    <i class="fas fa-user text-xl"></i>
-                </a>
-                
-                <!-- Wishlist -->
-                <a href="#" class="hidden md:flex items-center justify-center w-10 h-10 text-gray-600 hover:text-dustyrose transition-colors duration-300 relative">
-                    <i class="fas fa-heart text-xl"></i>
-                    <span class="absolute -top-1 -right-1 bg-dustyrose text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">2</span>
-                </a>
-                
-                <!-- Cart -->
-                <a href="#" class="flex items-center justify-center w-10 h-10 text-gray-600 hover:text-dustyrose transition-colors duration-300 relative">
-                    <i class="fas fa-shopping-bag text-xl"></i>
-                    <span class="absolute -top-1 -right-1 bg-dustyrose text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">3</span>
-                </a>
-                
-                <!-- Mobile Menu Button -->
                 <button class="md:hidden text-gray-700 focus:outline-none">
-                    <div class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-dustyrose/10 transition-colors duration-300">
-                        <i class="fas fa-bars text-xl"></i>
-                    </div>
+                    <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
         </div>
@@ -302,9 +234,9 @@
         </div>
     </div>
     
-    <!-- Enhanced Hero Carousel -->
-    <div class="relative overflow-hidden h-96 md:h-screen max-h-screen group">
-        <div id="carousel" class="flex h-full transition-transform duration-700 ease-[cubic-bezier(0.33,1,0.68,1)]">
+    <!-- Hero Carousel -->
+    <div class="relative overflow-hidden h-96 md:h-screen max-h-screen">
+        <div id="carousel" class="flex h-full transition-transform duration-1000 ease-in-out">
             <div class="carousel-slide min-w-full h-full relative">
                 <div class="absolute inset-0 bg-black bg-opacity-30"></div>
                 <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Floral Arrangement" class="w-full h-full object-cover">
@@ -339,20 +271,11 @@
                 </div>
             </div>
         </div>
-        <!-- Enhanced Controls -->
-        <div class="absolute bottom-8 left-0 right-0 flex justify-center space-x-3">
-            <button class="carousel-indicator w-3.5 h-3.5 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 focus:outline-none transition-all duration-300 transform hover:scale-125" data-slide="0"></button>
-            <button class="carousel-indicator w-3.5 h-3.5 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 focus:outline-none transition-all duration-300 transform hover:scale-125" data-slide="1"></button>
-            <button class="carousel-indicator w-3.5 h-3.5 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 focus:outline-none transition-all duration-300 transform hover:scale-125" data-slide="2"></button>
+        <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+            <button class="carousel-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 focus:outline-none" data-slide="0"></button>
+            <button class="carousel-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 focus:outline-none" data-slide="1"></button>
+            <button class="carousel-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 focus:outline-none" data-slide="2"></button>
         </div>
-        
-        <!-- Navigation Arrows -->
-        <button id="prevSlide" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-80 text-dustyrose p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg">
-            <i class="fas fa-chevron-left"></i>
-        </button>
-        <button id="nextSlide" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-80 text-dustyrose p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg">
-            <i class="fas fa-chevron-right"></i>
-        </button>
     </div>
     
     <!-- Categories Section -->
@@ -430,16 +353,10 @@
             <h3 class="font-playfair text-2xl md:text-3xl text-center text-dustyrose mb-8">Featured Products</h3>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Enhanced Product Card -->
-                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 relative group">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
-                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
-                        <button class="bg-white text-dustyrose font-bold py-2 px-6 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-lg hover:bg-dustyrose hover:text-white">
-                            Quick View
-                        </button>
-                    </div>
+                <!-- Product 1 -->
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
                     <div class="relative overflow-hidden h-64">
-                        <img src="https://images.unsplash.com/photo-1560743641-3914f2a4573a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Rose Bouquet" class="product-image w-full h-full object-cover">
+                        <img src="images/keychain.jpg" alt="Rose Bouquet" class="product-image w-full h-full object-cover">
                         <div class="sale-badge absolute top-4 right-4 bg-dustyrose text-white font-quicksand font-bold px-3 py-1 rounded-full text-sm">Sale 25%</div>
                     </div>
                     <div class="p-4">
@@ -456,7 +373,7 @@
                 <!-- Product 2 -->
                 <div class="product-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
                     <div class="relative overflow-hidden h-64">
-                        <img src="https://images.unsplash.com/photo-1597822738124-151fb72dcb79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Floral Keychain" class="product-image w-full h-full object-cover">
+                        <img src="images/1.jpg" alt="Floral Keychain" class="product-image w-full h-full object-cover">
                         <div class="sale-badge absolute top-4 right-4 bg-dustyrose text-white font-quicksand font-bold px-3 py-1 rounded-full text-sm">Sale 15%</div>
                     </div>
                     <div class="p-4">
@@ -511,12 +428,8 @@
         </div>
     </section>
     
-    <!-- Enhanced Testimonials Section -->
-    <section class="py-16 px-4 bg-blush bg-opacity-10">
-        <div class="absolute inset-0 overflow-hidden pointer-events-none">
-            <div class="absolute -right-20 -top-20 w-64 h-64 bg-peach rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
-            <div class="absolute -left-20 -bottom-20 w-64 h-64 bg-lavender rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
-        </div>
+    <!-- Testimonials Section -->
+    <section class="py-16 px-4 bg-blush bg-opacity-20">
         <div class="container mx-auto">
             <h2 class="font-dancing text-4xl md:text-5xl text-center text-dustyrose mb-12">What Our Customers Say</h2>
             
@@ -524,7 +437,7 @@
                 <!-- Testimonial 1 -->
                 <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
                     <div class="flex items-center mb-4">
-                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Customer" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <img src="images/review.jpg" alt="Customer" class="w-12 h-12 rounded-full object-cover mr-4">
                         <div>
                             <h4 class="font-quicksand font-semibold">Priya Sharma</h4>
                             <div class="flex text-yellow-400">
@@ -655,51 +568,22 @@
             <h2 class="font-dancing text-4xl md:text-5xl text-center text-dustyrose mb-4">Got Something Custom in Mind?</h2>
             <p class="font-playfair text-xl text-center text-gray-700 mb-12">Tell us below! We'd love to create something special just for you.</p>
             
-            <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8">
-                <form class="space-y-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="name" class="block font-quicksand font-medium text-gray-700 mb-1">Your Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dustyrose focus:border-transparent">
-                        </div>
-                        <div>
-                            <label for="email" class="block font-quicksand font-medium text-gray-700 mb-1">Email Address</label>
-                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dustyrose focus:border-transparent">
-                        </div>
+            <div class="md:w-1/2 p-10">
+                      <iframe 
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSeunudr__lRIk0c0IUeZFUIohgIqyKo52nhd9bZDllsXvsCaQ/viewform?usp=header" 
+                        width="100%" 
+                        height="800" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0">
+                        Loading…
+                      </iframe>
                     </div>
-                    <div>
-                        <label for="phone" class="block font-quicksand font-medium text-gray-700 mb-1">Phone Number</label>
-                        <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dustyrose focus:border-transparent">
-                    </div>
-                    <div>
-                        <label for="message" class="block font-quicksand font-medium text-gray-700 mb-1">Your Custom Request</label>
-                        <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dustyrose focus:border-transparent"></textarea>
-                    </div>
-                    <div>
-                        <label for="reference" class="block font-quicksand font-medium text-gray-700 mb-1">Reference Image (if any)</label>
-                        <input type="file" id="reference" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dustyrose focus:border-transparent">
-                    </div>
-                    <button type="submit" class="w-full bg-dustyrose hover:bg-blush text-white font-quicksand font-bold py-3 px-6 rounded-lg transition-colors duration-300">Submit Request</button>
-                </form>
-            </div>
         </div>
     </section>
     
-    <!-- Newsletter Section -->
-    <section class="py-16 px-4 bg-gradient-to-r from-peach/20 to-blush-pink/20">
-        <div class="container mx-auto max-w-4xl text-center">
-            <h2 class="font-dancing text-4xl md:text-5xl text-dustyrose mb-4">Join Our Floral Family</h2>
-            <p class="font-playfair text-xl text-gray-700 mb-8">Subscribe to get exclusive offers, floral tips, and early access to new collections</p>
-            <div class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-                <input type="email" placeholder="Your email address" class="flex-grow px-6 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-dustyrose focus:border-transparent font-quicksand">
-                <button class="bg-dustyrose hover:bg-blush text-white font-quicksand font-bold py-3 px-8 rounded-full transition-colors duration-300 transform hover:scale-105 shadow-lg">Subscribe</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Enhanced Footer -->
-    <footer class="bg-dustyrose text-white py-12 px-4 relative overflow-hidden">
-        <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-peach rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+    <!-- Footer -->
+    <footer class="bg-dustyrose text-white py-12 px-4">
         <div class="container mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
@@ -762,20 +646,13 @@
     </footer>
     
     <script>
-        // Enhanced Carousel functionality
+        // Carousel functionality
         let currentSlide = 0;
         const slides = document.querySelectorAll('.carousel-slide');
         const indicators = document.querySelectorAll('.carousel-indicator');
-        const prevBtn = document.getElementById('prevSlide');
-        const nextBtn = document.getElementById('nextSlide');
         const totalSlides = slides.length;
-        let autoSlideInterval;
         
         function showSlide(index) {
-            // Wrap around if at ends
-            if (index >= totalSlides) index = 0;
-            if (index < 0) index = totalSlides - 1;
-            
             slides.forEach((slide, i) => {
                 slide.style.opacity = i === index ? '1' : '0';
             });
@@ -789,48 +666,16 @@
         }
         
         function nextSlide() {
-            showSlide(currentSlide + 1);
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
         }
         
-        function prevSlide() {
-            showSlide(currentSlide - 1);
-        }
-        
-        function startAutoSlide() {
-            autoSlideInterval = setInterval(nextSlide, 5000);
-        }
-        
-        function resetAutoSlide() {
-            clearInterval(autoSlideInterval);
-            startAutoSlide();
-        }
-        
-        // Event listeners
         indicators.forEach((indicator, i) => {
-            indicator.addEventListener('click', () => {
-                showSlide(i);
-                resetAutoSlide();
-            });
+            indicator.addEventListener('click', () => showSlide(i));
         });
         
-        prevBtn.addEventListener('click', () => {
-            prevSlide();
-            resetAutoSlide();
-        });
-        
-        nextBtn.addEventListener('click', () => {
-            nextSlide();
-            resetAutoSlide();
-        });
-        
-        // Pause on hover
-        const carousel = document.querySelector('.group');
-        carousel.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
-        carousel.addEventListener('mouseleave', startAutoSlide);
-        
-        // Initialize
-        showSlide(0);
-        startAutoSlide();
+        // Auto-rotate carousel every 5 seconds
+        setInterval(nextSlide, 5000);
         
         // Initialize first slide
         showSlide(0);
